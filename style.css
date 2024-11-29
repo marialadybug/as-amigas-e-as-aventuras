@@ -1,0 +1,72 @@
+Body{
+  font-family: "Edu AU VIC WA NT Pre", cursive;
+  background-color: #grey;
+    color: white;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin:0;
+    font-size: 35px;
+  background-image: url("fundo.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-weight: 500;
+  font-shadow: 4px 4px 3px black;
+}
+
+footer{
+    font-family: "Roboto Condensed", sans-serif;
+  color: white;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+footer a{
+  text-decoration:none;
+  color:white;
+}
+
+footer a:hover{
+  color: red;
+  text-decoration: underline;
+  
+}
+
+button{
+   font-family: "Parkinsans", sans-serif;
+  background-color: red;
+    border: 2px solid red;
+  color: white;
+  font-size: 25px;
+border-radius: 200px;
+  margin: 20px;
+  padding:0.5em;
+  box-shadow: 3px 3px 4px black;
+}
+
+button:hover{
+  background-color: rgb(255,255,120);
+    border: 2px solid rgb(255,255,120);
+    color: black;
+}
+
+main{
+  max-width: 90%;
+    text-align: center;
+  padding: 20px;
+  flex: 1;
+}
+
+img{
+  max-width: 90%;
+}
+
+.passo{
+  display: none;
+}
+
+.passo.ativo{
+  display: block;
+}

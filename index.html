@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Parkinsans:wght@300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      
+      <div class="passo ativo" id= "passo-0">
+       <img src="logo.png">
+      <p>
+                          Ano de 1780. O céu está encoberto nos Cárpatos, onde o castelo de Drácula se ergue sinistro e ameaçador. Daniel Belmont, um caçador de vampiros decidido, veste uma capa negra surrada e segura o “Vampire Killer,” um açoite ancestral com poder suficiente para derrotar o próprio Drácula. Ele está em uma missão clara: libertar o mundo das forças das trevas, para honrar a linhagem da sua família "Belmont", que vem combatendo esse mal a mais de séculos, independente dos meios e sacrifícios.
+
+Ao se aproximar do castelo, Daniel encontra um viajante estranho, encostado numa bicicleta velha chamada “Fabin”. O homem, que se apresenta como Leonardo, possui um olhar astuto e um sorriso de canto, como se soubesse mais do que aparenta. Daniel sente-se desconfiado, mas precisa decidir como agir. </p>
+
+<button class="proximo" data-proximo="1"> Conversar com Leonardo para investigar suas intenções.</button>
+                                        <button class="proximo" data-proximo="2"> Ignorar Leonardo e seguir diretamente para o castelo.
+</button>
+      </div>
+                                                                                
+          <div class="passo" id= "passo-1">
+       <img src="logo.png">
+      <p> Daniel opta por conversar com Leonardo. Leonardo abre um sorriso ganancioso e se oferece para ajudar, mas sugere que sua ajuda não será gratuita. Daniel, atento, tem duas opções:
+                          </p>
+
+            <button class="proximo" data-proximo="3"> Recusar a ajuda de Leonardo e seguir sozinho.</button>
+                                        <button class="proximo" data-proximo="4">  Aceitar a ajuda de Leonardo, apesar das suspeitas.
+</button>
+      </div>                                                         <div class="passo" id="passo-2">
+<img src="logo.png">
+      <p>
+        Ignorando Leonardo, Daniel avança pelo caminho principal. No entanto, uma névoa espessa surge, e ele logo percebe que está perdido. Leonardo aparece mais adiante, como se o estivesse esperando.
+      </p>
+      
+      <button class="proximo" data-proximo="5">
+        Daniel decide pedir a ajuda de Leonardo para encontrar o caminho certo.
+
+      </button>
+      
+      <button class="proximo" data-proximo="6">
+        Daniel confronta Leonardo, desconfiado de que ele seja uma ameaça, e se prepara para lutar. 
+
+      </button>
+      </div>
+      
+        <div class="passo" id="passo-5">
+<img src="logo.png">
+      <p>
+    Daniel decide aceitar a ajuda de Leonardo. Contudo, em certo momento, Leonardo tenta roubar o “Vampire Killer”, e Daniel é obrigado a enfrentá-lo.
+      </p>
+      
+      <button class="proximo" data-proximo="7">
+        Daniel tenta atacar Leonardo com uma sequência de golpes rápidos.
+      </button>
+      
+      <button class="proximo" data-proximo="8">
+         Daniel decide desarmar Leonardo antes de qualquer ataque.
+      </button>
+      </div>
+      
+      <div class="passo" id="passo-6">
+<img src="perdeu.png">
+      <p>
+        Daniel confronta Leonardo diretamente, mas Leonardo, sendo um servo de Drácula, usa habilidades sombrias sem que Daniel perceba para derrotá-lo.
+
+      </p>
+      
+      <button class="proximo" data-proximo="0">
+        Reiniciar? 🕹
+      </button>
+
+      </div>
+    
+        <div class="passo" id="passo-7">
+<img src="ganhou.png">
+      <p>
+        Usando uma sequência rápida de ataques, Daniel consegue desarmar Leonardo e vencê-lo. Ele continua em direção ao castelo.
+      </p>
+      
+      <button class="proximo" data-proximo="0">
+           Reiniciar? 🕹
+      </button>
+    
+      </div>
+      
+        <div class="passo" id="passo-8">
+<img src="logo.png">
+      <p>
+        Após derrotar Leonardo, Daniel encontra-se em uma nova encruzilhada no castelo, onde pode tomar diferentes caminhos. Ele decide continuar explorando, sabendo que a batalha contra Drácula e seus servos ainda está longe de acabar. Ele retorna ao ponto inicial, onde novas escolhas e perigos o aguardam.
+      </p>
+      
+      <button class="proximo" data-proximo="3">
+         Recusar a ajuda de Leonardo e seguir sozinho.
+
+      </button>
+      
+      <button class="proximo" data-proximo="4">
+        Aceitar a ajuda de Leonardo, apesar das suspeitas.
+      </button>
+      </div>
+      
+        <div class="passo" id="passo-3">
+<img src="logo.png">
+      <p>
+        Ao recusar a ajuda de Leonardo, Daniel segue sozinho e entra no castelo, mas é surpreendido pela figura da Morte, que exige que ele entregue todos os seus itens, exceto o “Vampire Killer”. Apesar disso, a morte não mostra intenções de lutar com Daniel antes de seu encontro com o Lorde das Trevas.
+      </p>
+      
+      <button class="proximo" data-proximo="9">
+           Daniel aceita seu destino e decide seguir apenas com o açoite.
+      </button>
+      
+      <button class="proximo" data-proximo="10">
+      Daniel tenta enfrentar a morte para recuperar seus itens
+  
+      </button>
+      </div>
+      
+    <div class="passo" id="passo-4">
+<img src="ganhou.png">
+      <p>
+        Ao aceitar a ajuda de Leonardo, Daniel percebe tarde demais que caiu numa armadilha. Leonardo revela-se um servo de Drácula e começa uma luta mortal. Usando sua habilidade e o poder do açoite, Daniel consegue derrotá-lo.
+      </p>
+      
+      <button class="proximo" data-proximo="0">
+           Reiniciar? 🕹
+      </button>
+      
+      </div>
+      
+        <div class="passo" id="passo-10">
+<img src="perdeu.png">
+      <p>
+  Daniel decide enfrentar a Morte para recuperar seus itens. No entanto, seus poderes são insuficientes para vencer a morte naquele momento, e a Morte o derrota de forma implacável.
+      </p>
+      
+      <button class="proximo" data-proximo="0">
+         Reiniciar? 🕹
+      </button>
+      </div>
+            <div class="passo" id="passo-9">
+<img src="ganhou.png">
+      <p>
+      Aceitando a perda de seus itens, Daniel continua com apenas o “Vampire Killer” e vai de encontro a Drácula. Mesmo com desvantagens, o poder ancestral do açoite permite que ele supere o lorde vampiro em uma batalha épica, finalmente libertando o mundo das trevas.
+      </p>
+      
+      <button class="proximo" data-proximo="0">
+           Reiniciar? 🕹
+      </button>
+      
+
+      </div>
+                  
+    </main>
+    <footer>
+                   <p> Criado por <a href="https://github.com/pib0ni"> Pietro Boni </a></p>
+                                                                     </footer>
+    <script src="sketch.js"></script>
+  </body>
+</html>
